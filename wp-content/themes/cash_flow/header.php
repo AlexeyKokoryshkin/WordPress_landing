@@ -51,5 +51,4 @@
 			</header>
 
 		<!-- Banner -->
-			<section id="banner"></section>     
-			
+			<section id="banner"></section>         

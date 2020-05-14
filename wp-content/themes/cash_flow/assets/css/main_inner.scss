@@ -200,6 +200,147 @@ footer {
     }
 }
 
+
+// Форма обратной связи
+.b-feedbackForm {
+    .b-butn {
+        &:focus {
+            outline: none!important;
+        }
+    }
+    .pulse {
+            position: fixed;
+            top: 50%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            background: #4fbaea;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            text-align: center;
+            font-size: 50px;
+            z-index: 100;
+            text-decoration: none;
+            .fa-phone {
+                display: flex;
+                margin-top: 25%;
+                justify-content: center
+            }
+            
+          &:before,
+          &:after {
+              content: " ";
+              display: block;
+              position: absolute;
+              border: 50%;
+              border: 1px solid #4fbaea;
+              left: -20px;
+              right: -20px;
+              top: -20px;
+              bottom: -20px;
+              border-radius: 50%;
+              animation: animate 1.5s linear infinite;
+              opacity: 0;
+              backface-visibility: hidden; 
+          }         
+          &:after{
+              animation-delay: .5s;
+          }        
+          @keyframes animate
+          {
+              0%
+              {
+                  transform: scale(0.5);
+                  opacity: 0;
+              }
+              50%
+              {
+                  opacity: 1;
+              }
+              100%
+              {
+                  transform: scale(1.2);
+                  opacity: 0;
+              }
+          }
+    }
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 0;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 33px;
+     .decor {
+        border-radius: 30px;
+        background: #f69a73;
+        .form-inner {
+            padding: 35px!important;
+            .submit {
+                font-weight: 700;
+                color: white;
+                padding: .8em 1em calc(.8em + 3px);
+                border-radius: 3px;
+                background: rgb(64,199,129);
+                box-shadow: 0 -3px rgb(53,167,110) inset;
+                transition: 0.2s; 
+                padding: 10px;
+                border: none;
+                margin-top: 10px;
+                font: inherit;
+                &:hover {
+                    background: rgb(53, 167, 110); 
+                    outline: none;
+                }
+                &:active {
+                    background: rgb(33,147,90);
+                    box-shadow: 0 3px rgb(33,147,90) inset;
+                    outline: none;
+                }
+            }
+        }
+    } 
+}
+
+.form-inner {padding: 50px;}
+.form-inner input,
+.form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background: #E9EFF6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.decor textarea {
+    line-height: 20px!important;
+  }
+
+.form-inner input[type="submit"] {
+  margin-top: 30px;
+  background: #f69a73;
+  border-bottom: 4px solid #d87d56;
+  color: white;
+  font-size: 14px;
+}
+.form-inner textarea {resize: none;}
+.form-inner h3 {
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #707981;
+}        
+
+
 @media screen and (max-width: 991px) {
     .navbar-nav {
         flex-direction: row!important;
@@ -261,6 +402,27 @@ footer {
         }
     }
 }
+
+@media (max-width: 564px) {
+    .b-feedbackForm {
+        .pulse {
+            width: 70px;
+            height: 70px;
+            font-size: 30px;
+        }
+    }
+    .decor {
+        width: 100%;
+        height: auto;
+        margin: 45px auto 0;
+        .form-inner {
+            padding: 25px!important;
+        }
+        textarea {
+            line-height: 25px;
+          }
+    }
+}  
 
 @media  (max-width: 463px) {
     body #banner {

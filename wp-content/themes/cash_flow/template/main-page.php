@@ -3,32 +3,82 @@
   Template Name: Главная страница
  */
 get_header();
-?>
-<!-- 	<div class="b-contactForm">
-		<button type="button" class="b-butn pulse"><i class="fa fa-phone"></i></button>
-			<div class="window hidden">
-				<form class="decor" action="contact-form.php" method="post">
-					<div class="b-close"><i class="fas fa-times"></i></div>  
-					<div class="circle"></div>
-					<div class="form-inner">
-					<h4>Заказать обратный звонок</h4>
-						<label for="name">Имя:</label>
-						<input type="text"  name="name" placeholder="Введите ваше имя" required />
-					
-						<label for="email">Email:</label>
-						<input type="email" name="email" placeholder="Введите электронный адрес" required />
-					
-						<label for="tel">Телефон:</label>
-						<input type="tel" name="tel" placeholder="Введите номер телефона" required />
-					
-						<label for="message">Текст сообщения:</label><br>
-						<textarea name="message" cols="40" rows="6" required ></textarea>
-						<input name="bezspama" type="text" style="display:none" value="" />	
-					<button class="submit" type="submit">Отправить сообщение</button>
-				</div>
-			</form>
-    	</div>
-  </div>    -->
+?>                          
+
+<!-- <div class="b-feedbackForm">
+
+	<a href="#form-popup" class="b-butn pulse popup-with-form"><i class="fa fa-phone"></i></a>
+	
+    <div id="form-popup" class="white-popup mfp-hide">
+        <form class="decor" action="wp-content/themes/cash_flow/functions-parts/post-form.php" method="post">
+        <div class="circle"></div>
+        <div class="form-inner">
+                <h4>Заказать обратный звонок</h4>
+                    <label for="form_name">Имя:</label>
+                    <input id="form_name" type="text"  name="name" placeholder="Введите ваше имя" required />
+                
+                    <label for="tel">Телефон:</label>
+                    <input type="tel" name="tel" placeholder="Введите номер телефона" />
+                
+                    <label for="form_message">Текст сообщения:</label><br>
+                    <textarea id="form_message" name="message" cols="40" rows="6" placeholder="Пожалуйста, оставьте сообщение" required ></textarea>
+                
+					<input type="submit" name="btn_submit" id="button_contacts" value="Отправить сообщение">
+        </div>
+      </form>
+	</div> -->
+
+
+<!-- 	<section id="message">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2><span>Форма</span> обратной связи</h2>
+         <div id="contact-form">        
+           <div class="controls">
+             <div class="row">
+               <div class="col-md-6">
+                 <div class="form-group">
+                   <label for="form_email">Ваш Email *</label>
+                    <input id="form_email" type="email" class="form-control" placeholder="Введите адрес электронной почты*" required="" data-error="Требуется действующее электронное письмо.">
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+               <div class="col-md-6">
+                 <div class="form-group">
+                   <label for="form_name">Ваше имя *</label>
+                    <input id="form_name" type="text" class="form-control" required="" placeholder="Как к Вам обращаться?">
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-12 checkbox-data">
+                     <label>
+                         <input type="checkbox" checked="checked" id="person_data" required="">
+                         <i class="fa fa-2x icon-checkbox"></i>
+                         <span>Подтверждаю согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+                     </label>
+                 </div>
+             </div>
+             <div class="row">
+               <div class="col-md-12">
+                 <div class="form-group">
+                    <textarea id="form_message" name="text_comment" class="form-control" placeholder="Пожалуйста, оставьте сообщение" rows="4" required="" data-error="Пожалуйста, оставьте нам сообщение."></textarea>
+                   <div class="help-block with-errors"></div>
+                 </div>
+                 <div class="messages"></div>
+               </div>          
+               <div class="col-md-12 text-center">
+                  <input type="submit" name="btn_submit" id="button_contacts" value="Отправить сообщение">
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+</section>   -->
 
     <section class="img_learnToSale">
         <img src="<?= get_template_directory_uri() ?>/images/photo1.png" alt="">
