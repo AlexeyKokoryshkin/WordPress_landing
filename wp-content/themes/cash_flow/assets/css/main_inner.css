@@ -1,0 +1,294 @@
+header nav .nav-link:hover {
+  color: black !important;
+}
+
+header nav .navbar-brand img {
+  max-width: 250px;
+}
+
+header nav .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav .navbar-toggler {
+  border-color: black !important;
+}
+
+.wrapper {
+  padding-top: 0 !important;
+}
+
+.img_learnToSale img {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.b-articleAboutUs__custom {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.b-articleAboutProgramm__custom h2 {
+  margin-top: -10px !important;
+}
+
+.b-articleAboutProgramm__custom p {
+  font-size: 16px;
+}
+
+.b-hatOfOurClient {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.b-contantOurClient .image img {
+  width: 80% !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.carousel-item img {
+  max-width: 80% !important;
+  margin: 0 auto;
+}
+
+.b-sliderFeedback {
+  margin-top: 50px;
+}
+
+.b-sliderFeedback #carouselExampleCaptions {
+  position: relative;
+}
+
+.b-sliderFeedback #carouselExampleCaptions .carousel-indicators {
+  bottom: -10px;
+  margin-bottom: 0;
+}
+
+.b-sliderFeedback #carouselExampleCaptions .carousel-indicators li {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.b-sliderFeedback .b-buttonFeedback {
+  text-decoration: none;
+  margin: 50px;
+  margin-left: 15%;
+}
+
+.b-sliderFeedback h2 {
+  text-align: center;
+  font-size: 2.75em;
+  margin: 0 0 .5em 0;
+}
+
+.b-sliderFeedback .b-sliderFeedback__customStyle .b-carouselContent {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.b-sliderFeedback .b-sliderFeedback__customStyle .b-carouselContent img {
+  max-width: 150px !important;
+  max-height: 150px;
+  border-radius: 80px;
+  float: left;
+  padding: 10px;
+}
+
+.b-sliderFeedback .b-sliderFeedback__customStyle .b-carouselContent .b-flexContainer {
+  display: contents;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.b-contactToUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-contactToUs h2 {
+  margin: 0 0 0 !important;
+}
+
+.b-contactToUs .b-socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.b-contactToUs .b-socialLinks .b-tg__button {
+  margin: 10px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  max-width: 150px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: 'Roboto',Arial,sans-serif;
+  line-height: 1.8;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-width: 1px;
+  border-radius: 30px;
+  background-color: #e8691c;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.b-contactToUs .b-socialLinks .b-tg__button:hover {
+  background-color: #2A68C4;
+}
+
+.b-contactToUs .b-socialLinks .b-wp__button {
+  margin: 10px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  max-width: 150px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: 'Roboto',Arial,sans-serif;
+  line-height: 1.8;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-width: 1px;
+  border-radius: 30px;
+  background-color: #e8691c;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.b-contactToUs .b-socialLinks .b-wp__button:hover {
+  background-color: #4EBA1C;
+}
+
+footer .b-footer__mail {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+}
+
+footer .b-footerSocialLinks a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 1px;
+    font-family: auto;
+  }
+}
+
+@media (max-width: 791px) {
+  header nav .navbar-brand img {
+    max-width: 150px;
+  }
+  .img_learnToSale img {
+    max-width: 415px;
+    margin-top: 45px;
+  }
+  .image img {
+    width: 80% !important;
+  }
+  .b-contantOurClient {
+    text-align: center;
+  }
+  .b-contantOurClient .image img {
+    width: 50% !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .b-contactToUs h2 {
+    font-size: 24px !important;
+  }
+  .b-contactToUs img {
+    width: 85%;
+  }
+  footer .flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: baseline !important;
+        -ms-flex-align: baseline !important;
+            align-items: baseline !important;
+  }
+}
+
+@media (max-width: 463px) {
+  body #banner {
+    background-size: auto !important;
+  }
+  header nav .navbar-brand img {
+    max-width: 150px;
+  }
+  .img_learnToSale img {
+    max-width: 332px;
+    margin-top: 45px;
+  }
+  .image img {
+    width: 80% !important;
+  }
+  .b-contantOurClient {
+    text-align: center;
+  }
+  .b-contantOurClient .image img {
+    width: 50% !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .b-sliderFeedback h2 {
+    font-size: 1.75em;
+  }
+  .b-sliderFeedback .b-sliderFeedback__customStyle .b-carouselContent img {
+    float: none;
+  }
+  .b-contactToUs h2 {
+    font-size: 24px !important;
+  }
+  .b-contactToUs img {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=main_inner.css.map */

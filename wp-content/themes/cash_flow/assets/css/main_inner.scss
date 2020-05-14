@@ -1,0 +1,326 @@
+header {
+    nav {
+        .nav-link {
+            &:hover {
+                color: black!important;
+            }
+        }
+        .navbar-brand {
+            img {
+                max-width: 250px;
+            }
+        }
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+        .navbar-toggler {
+            border-color: rgba(0,0,0,1.1)!important;
+        }
+    }
+
+}
+
+// Убраны отступы между блоками
+.wrapper {
+    padding-top: 0!important;
+}
+
+.img_learnToSale {
+    img {
+        max-width: 600px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+}
+
+.b-articleAboutUs__custom {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.b-articleAboutProgramm__custom {
+    h2 {
+        margin-top: -10px!important;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+// Заголовки для блока "Почему клиенты выбирают нас?"
+.b-hatOfOurClient {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+// Размер картинок для блока "Почему клиенты выбирают нас?"
+.b-contantOurClient {
+    .image {
+        img {
+            width: 80%!important;
+        }
+    }
+}
+
+// Иконки слайдера (вперед/назад)
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+// Стили для картинок слайдера
+.carousel-item {
+    img {
+        max-width: 80%!important;
+        margin: 0 auto;
+    }
+}
+
+// Стили для слайдера с отзывами клиентов
+.b-sliderFeedback {
+    margin-top: 50px;
+    #carouselExampleCaptions {
+        position: relative;
+        .carousel-indicators {
+            bottom: -10px;
+            margin-bottom: 0;
+            li {
+                filter: brightness(0.5);
+            } 
+        }
+    }
+
+    .b-buttonFeedback {
+        text-decoration: none;
+        margin: 50px;
+        margin-left: 15%;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2.75em;
+        margin: 0 0 .5em 0;
+    }
+    .b-sliderFeedback__customStyle {
+        .b-carouselContent {
+            padding-left: 15%;
+            padding-right: 15%; 
+            img {
+                max-width: 150px!important;
+                max-height: 150px;
+                border-radius: 80px;
+                float: left;
+                padding: 10px;
+            }
+            .b-flexContainer {
+                display: contents;
+                padding-left: 20px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// Стили для блока "Связаться с нами"
+.b-contactToUs {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+        margin: 0 0 0!important;
+    }
+    .b-socialLinks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        .b-tg__button {
+            margin: 10px;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            max-width: 150px;
+            display: inline-block;
+            color: #ffffff;
+            font-size: 17px;
+            font-family: 'Roboto',Arial,sans-serif;
+            line-height: 1.8;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-width: 1px;
+            border-radius: 30px;
+            background-color: #e8691c;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            &:hover {
+                background-color: #2A68C4;
+            }
+        }
+        .b-wp__button {
+            margin: 10px;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            max-width: 150px;
+            display: inline-block;
+            color: #ffffff;
+            font-size: 17px;
+            font-family: 'Roboto',Arial,sans-serif;
+            line-height: 1.8;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-width: 1px;
+            border-radius: 30px;
+            background-color: #e8691c;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            &:hover {
+                background-color: #4EBA1C;
+            }
+        }
+    }
+}
+
+footer {
+    .b-footer__mail {
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: black;
+      }
+    .b-footerSocialLinks {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: row!important;
+        justify-content: flex-end;
+        font-size: 1px;
+        font-family: auto;
+    }
+}
+
+@media  (max-width: 791px) {
+    header {
+        nav {
+            .navbar-brand {
+                img {
+                    max-width: 150px;
+                }
+            }
+        }   
+    }   
+
+    .img_learnToSale {
+        img {
+            max-width: 415px;
+            margin-top: 45px;
+        }
+    
+    }
+
+    .image {
+        img {
+            width: 80%!important;
+        }
+    }
+
+    .b-contantOurClient {
+        text-align: center;
+        .image {
+            img {
+                width: 50%!important;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .b-contactToUs {
+        h2 {
+            font-size: 24px!important;
+        }
+        img {
+            width: 85%;
+        }
+    }
+
+    footer {
+        .flex {
+            display: flex!important;
+            align-items: baseline!important;
+        }
+    }
+}
+
+@media  (max-width: 463px) {
+    body #banner {
+        background-size: auto!important;
+    }
+
+    header {
+        nav {
+            .navbar-brand {
+                img {
+                    max-width: 150px;
+                }
+            }
+        }   
+    }   
+
+    .img_learnToSale {
+        img {
+            max-width: 332px;
+            margin-top: 45px;
+        }
+    
+    }
+
+    .image {
+        img {
+            width: 80%!important;
+        }
+    }
+
+    .b-contantOurClient {
+        text-align: center;
+        .image {
+            img {
+                width: 50%!important;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .b-sliderFeedback {
+        h2 {
+            font-size: 1.75em;
+        }
+        .b-sliderFeedback__customStyle {
+            .b-carouselContent {
+                img {
+                    float: none;
+                }
+            }
+        }
+    }
+
+    .b-contactToUs {
+        h2 {
+            font-size: 24px!important;
+        }
+        img {
+            width: 85%;
+        }
+    }
+}
