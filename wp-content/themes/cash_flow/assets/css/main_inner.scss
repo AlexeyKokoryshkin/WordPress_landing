@@ -276,8 +276,12 @@ footer {
     margin: 20px auto;
     border-radius: 33px;
      .decor {
+         h2 {
+             color: lightcyan;
+         }
+        padding: 15px;
         border-radius: 30px;
-        background: #f69a73;
+        background: #52A3DB;
         .form-inner {
             padding: 35px!important;
             .submit {
@@ -339,6 +343,10 @@ footer {
   font-size: 24px;
   color: #707981;
 }        
+
+body input[type="text"], body input[type="password"], body input[type="email"], body input[type="tel"], body select, body textarea {
+    color: #5a5a5a!important;
+}
 
 
 @media screen and (max-width: 991px) {

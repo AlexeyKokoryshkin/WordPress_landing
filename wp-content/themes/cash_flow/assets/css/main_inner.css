@@ -304,8 +304,13 @@ footer .b-footerSocialLinks a {
 }
 
 .white-popup .decor {
+  padding: 15px;
   border-radius: 30px;
-  background: #f69a73;
+  background: #52A3DB;
+}
+
+.white-popup .decor h2 {
+  color: lightcyan;
 }
 
 .white-popup .decor .form-inner {
@@ -379,6 +384,10 @@ footer .b-footerSocialLinks a {
   font-weight: 500;
   font-size: 24px;
   color: #707981;
+}
+
+body input[type="text"], body input[type="password"], body input[type="email"], body input[type="tel"], body select, body textarea {
+  color: #5a5a5a !important;
 }
 
 @media screen and (max-width: 991px) {

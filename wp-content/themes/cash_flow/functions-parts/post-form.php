@@ -4,12 +4,14 @@
     // проверяем корректность полей
     if($_POST['form_name'] == "")    $errors[] = "Поле <span style='color: #666;'>Ваше имя</span> не заполнено";
     if($_POST['form_message'] == "") $errors[] = "Поле <span style='color: #666;'>Текст сообщения</span> не заполнено";
+    if($_POST['form_capcha'] !== "") $errors[] = "<span style='color: #666;'>Роботам запрещено отправлять сообщения</span>";
  
     // если форма без ошибок
     if(empty($errors)){     
         // собираем данные из формы
         $message  = "Имя пользователя: " . $_POST['form_name'] . "<br/>";
-        $message .= "Текст письма: " . $_POST['form_message'];      
+        $message  .= "Текст письма: " . $_POST['form_message'] . "<br/>";  
+        $message  .= "" . $_POST['form_capcha'];  
         send_mail($message); // отправим письмо
         // выведем сообщение об успехе
         $msg_box = "<span style='color: green;font-size: 1.4em;'>Спасибо за обращение, сообщение успешно отправлено! <br/> В течении 24 часов я Вам отвечу!<br/></span><br/>";
@@ -31,14 +33,15 @@
     // функция отправки письма
     function send_mail($message){
         // почта, на которую придет письмо
-        $mail_to = "7f@mail.ru"; 
+        $mail_to = "Sen080793@gmail.com";
+        $mail_to .= ", 7f@mail.ru"; 
         // тема письма
         $subject = "Письмо с обратной связи";
          
         // заголовок письма
         $headers= "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n"; // кодировка письма
-        $headers .= "From: Название сайта <no-reply@test.com>\r\n"; // от кого письмо
+        $headers .= "From: Cash-fl.ru <no-reply@test.com>\r\n"; // от кого письмо
          
         // отправляем письмо 
         mail($mail_to, $subject, $message, $headers);

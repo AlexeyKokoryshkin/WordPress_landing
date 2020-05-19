@@ -13,7 +13,7 @@
 			</footer>
 			<script src="<?= get_template_directory_uri() ?>/assets/js/jquery.magnific-popup.min.js" crossorigin="anonymous"></script>
 			<script src="<?= get_template_directory_uri() ?>/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
-			<script src="<?= get_template_directory_uri() ?>/assets/js/main.js"></script>
+			<script async src="<?= get_template_directory_uri() ?>/assets/js/main.js"></script>
 
 	</body>
 </html>                                       
