@@ -25,12 +25,13 @@ function my_login_logo(){
         ';
    }
 
-   add_action('login_head', 'my_login_logo');
-   /* Ставим ссылку с логотипа на сайт, а не на wordpress.org */
-   add_filter( 'login_headerurl', create_function('', 'return get_home_url();') );
+
+add_action('login_head', 'my_login_logo');
+/* Ставим ссылку с логотипа на сайт, а не на wordpress.org */
+add_filter( 'login_headerurl', create_function('', 'return get_home_url();') );
     
-   /* убираем title в логотипе "сайт работает на wordpress" */
-   add_filter( 'login_headertitle', create_function('', 'return false;') );
+/* убираем title в логотипе "сайт работает на wordpress" */
+add_filter( 'login_headertitle', create_function('', 'return false;') );
 
 
 // Изменение внутреннего контента админки
